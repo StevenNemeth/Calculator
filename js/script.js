@@ -26,7 +26,6 @@ function equal(e){
 }
 function clearButton(e){
     var elem = document.getElementById('equation')
-    console.log(elem)
     elem.innerText = ""
     operator = null
 }
