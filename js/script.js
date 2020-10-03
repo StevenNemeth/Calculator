@@ -6,6 +6,11 @@ function numButton(e){
     elem.innerText+=e.target.innerText
 }
 function operate(e){
+    if(operator){
+        equal()
+        operator = e.target.innerText
+        return
+    }
     operator = e.target.innerText
     var elem = document.getElementById('equation')
     tempNum = elem.innerText
@@ -18,4 +23,10 @@ function equal(e){
         elem.innerText = result
         operator = null
     }
+}
+function clearButton(e){
+    var elem = document.getElementById('equation')
+    console.log(elem)
+    elem.innerText = ""
+    operator = null
 }
