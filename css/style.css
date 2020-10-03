@@ -1,3 +1,26 @@
-body{
+.button-row{
+    display: grid;
+    grid-auto-columns: 100px;
+    height: 100px;
+    grid-template-areas: "a a a a";
+    grid-gap: 10px;
     
+
 }
+
+.button-row > p {
+    background-color: beige;
+    text-align: center;
+    padding: 34px;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+  }
+
+  #display > p {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 100px;
+    margin: 0px;
+    text-align: right;
+    max-width: 430px;
+  }
